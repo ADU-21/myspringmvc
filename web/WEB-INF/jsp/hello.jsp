@@ -11,6 +11,7 @@
     <title>${name}</title>
 </head>
 <body>
-<h1>${msg}</h1>
+<h1>${msg}</h1><br>
+<p><b>handlerFeatureToggle:</b> ${handlerFeatureToggle}</p><br>
 </body>
 </html>
