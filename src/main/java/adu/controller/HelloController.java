@@ -19,10 +19,12 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String printHello(ModelMap model) {
+
         String handlerFeatureToggle = String.valueOf(featureToggles.enabled(FeatureToggles.TEST_TOGGLE));
         model.addAttribute("msg", "Spring MVC Hello World");
         model.addAttribute("name", "adu");
         model.addAttribute("handlerFeatureToggle", handlerFeatureToggle);
+        model.addAttribute("featureToggles", featureToggles);
         return "hello";
     }
 
