@@ -1,2 +1,2 @@
 # My Spring MVC 
- This is a simple spring mvc demo for practice
+ This is a simple spring mvc demo for featureToggles
