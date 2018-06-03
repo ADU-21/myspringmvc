@@ -1,6 +1,7 @@
 package adu.controller;
 
 
+import adu.featuretoggle.FeatureToggle;
 import adu.featuretoggle.FeatureToggles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,6 +27,12 @@ public class HelloController {
         model.addAttribute("handlerFeatureToggle", handlerFeatureToggle);
         model.addAttribute("featureToggles", featureToggles);
         return "hello";
+    }
+
+    @FeatureToggle(FeatureToggles.FEATURE_HANDLER_ENABLE)
+    @RequestMapping(value = "/feature", method = RequestMethod.GET)
+    public String getFeature() {
+        return "feature";
     }
 
 }

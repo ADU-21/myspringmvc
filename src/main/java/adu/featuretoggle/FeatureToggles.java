@@ -12,6 +12,7 @@ import java.util.Properties;
 @Scope(value = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class FeatureToggles {
     public static final String TEST_TOGGLE = "test-toggle";
+    public static final String FEATURE_HANDLER_ENABLE = "feature-handler-enable";
 
     private static final boolean ENABLE_BY_DEFAULT = false;
 
