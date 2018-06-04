@@ -20,9 +20,11 @@
 <p><b>handlerFeatureToggle:</b> ${handlerFeatureToggle}</p><br>
 <c:choose>
     <c:when test="${testToggle}">
+        <%System.out.println("This is feature Toggle for JSP on");%>
         <p>This is feature Toggle for JSP on</p>
     </c:when>
     <c:otherwise>
+        <%System.out.println("This is feature Toggle for JSP off");%>
         <p>This is feature Toggle for JSP off</p>
     </c:otherwise>
 </c:choose>

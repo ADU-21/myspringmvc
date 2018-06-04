@@ -1,13 +1,13 @@
 package adu.interceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import adu.featuretoggle.FeatureToggle;
 import adu.featuretoggle.FeatureToggles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class FeatureToggleInterceptor extends HandlerInterceptorAdapter {
     private final FeatureToggles featureToggles;

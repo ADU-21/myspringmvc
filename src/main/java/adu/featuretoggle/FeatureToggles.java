@@ -16,7 +16,10 @@ public class FeatureToggles {
 
     private static final boolean ENABLE_BY_DEFAULT = false;
 
-    private final Properties featureToggleProps;
+    private Properties featureToggleProps;
+
+    public FeatureToggles() {
+    }
 
     @Autowired
     public FeatureToggles(@Qualifier("featuresProperties") Properties featureToggleProps) {
